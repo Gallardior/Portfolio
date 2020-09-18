@@ -1,50 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>Jesus Gallardo</title>
-
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Hola, soy Jesus Gallardo un Frontend Developer">
+  
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/myAvatar.png" type="image/x-icon">
 
   <!-- CDN´s -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+      <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+      <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body >
   <div class="contenedor" >
-    <header class="header animate__animated animate__fadeIn">
-      <h1 class="header__title"><a href="./index.html"> GALLARDIOR.DEV</a></h1>
-      <nav class="header__nav">
-        <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Linkedin</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="header">
+        <h1 class="header__title"><a href="./index.html"> Gallardo.dev</a></h1>
+        <i class="fas fa-bars menuIcon" id="menuIcon"></i>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:jjgallardior@gmail.com">Contact</a></li>
+            <li><a href="https://twitter.com/Gallardior" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/Gallardior" target="_blank">Github</a></li>
+            <li><a href="https://linkedin.com" target="_blank">Linkedin</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="mainContainer">
-      <div class="myAvatar animate__animated animate__fadeIn">
+      <div class="myAvatar">
         <img src="img/myAvatar--izquierda.png" alt="My Avatar">
       </div>
-      <div class="mainContent animate__animated animate__fadeInUp">
+      <div class="mainContent">
         <h2 class="mainContent__title">Hi, I´m Jesús Gallardo</h2>
         <p class="mainContent__description">I like creating things with web technologies.</p>
-        <p class="mainContent__link"><a href="#">See the latest projects I've been working on #</a></p>
+        <ul class="mainContent__tech" id="logos">
+          <li>  <img src="logos/html5.svg" alt="HTML">  </li>
+          <li>  <img src="logos/css-3.svg" alt="CSS">  </li>
+          <li>  <img src="logos/logo-javascript.svg" alt="JavaScript">  </li>
+          <li>  <img src="logos/firebase-1.svg" alt="Firebase">  </li>
+          <!-- <li>  <img src="logos/webpack-icon.svg" alt="Webpack">  </li> -->
+          <li>  <img src="logos/github-1.svg" alt="GitHub">  </li>
+          <li>  <img src="logos/git-icon.svg" alt="Git">  </li>
+        </ul>
+        <p class="mainContent__link"><a href="portfolio.html">See the latest projects I've been working on<i class="fas fa-arrow-right"></i></a></p>
       </div>
     </main>
 
-    <footer class="footer animate__animated animate__fadeInUp">You can follow me on Twitter and <a href="#">GitHub</a>. Also, here's my <a href="#">LinkedIn</a> and my <a href="#">Email</a>.</footer>
+    <footer class="footer">You can follow me on Twitter and <a href="https://github.com/Gallardior " target="_blank">GitHub <i class="fab fa-github"></i></a> Also, here's my <a href="https://linkedin.com" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a> and my <a href="mailto:jjgallardior@gmail.com">Email <i class="far fa-envelope"></i></a></footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/particles.js"></script>
   <div id="particles-js"></div>
 </body>
 </html>

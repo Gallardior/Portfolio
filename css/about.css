@@ -1,0 +1,40 @@
+
+.aboutArticle
+{
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.aboutArticle h1
+{
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.aboutArticle h2
+{
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.aboutArticle p
+{
+  color: rgba(255,255,255,0.6);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.aboutArticle ul 
+{
+  margin-top: 20px;
+}
+.aboutArticle ul li
+{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.aboutArticle ul li img
+{
+  margin-right: 20px;
+}
